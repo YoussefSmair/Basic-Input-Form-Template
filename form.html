@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Microsoft Tutorials</title>
+        <link rel="stylesheet" href="form.css">
+    
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title" class="title">Microsoft templates</h1>
+
+            <form id="form" class="form hidden" action="presentation dr asmaa.html" >
+            
+                <h2>Register here</h2>
+
+                <input type="text" placeholder="First Name " required >
+                <input type="text" placeholder=" Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="enter password" required>
+
+                <select>
+                    <option value="business">business</option>
+                    <option value="personnel">personnel</option>
+                </select>
+
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+
+
+
+
+            <button id="actionButton" class="action-button">تسجيل</button>
+        </div>
+        <script>
+            
+            document.getElementById("actionButton").addEventListener("click", function() {
+            const title = document.getElementById("title");
+            const form = document.getElementById("form");
+        
+            // تصغير العنوان وتحريكه إلى الأعلى
+            title.style.fontSize = "4rem";
+            title.style.marginTop = "20px";
+        
+            // إظهار الفورم
+            form.classList.remove("hidden");
+            form.style.opacity = "1";
+            form.style.transform = "translateY(0)";
+        });
+        </script>        
+    </body>
+    </html>
